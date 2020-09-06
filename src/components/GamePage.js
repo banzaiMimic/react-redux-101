@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-const CoursesPage = () => {
+const GamePage = () => {
 
-  const [ course, setCourse ] = useState({ title: '' })
+  const [ game, setGame ] = useState({ name: '' })
 
   const handleChange = evt => {
-    setCourse( { title: evt.target.value })
+    setGame( { name: evt.target.value })
   }
 
   const handleSubmit = evt => {
@@ -19,16 +19,16 @@ const CoursesPage = () => {
 
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
-      <h2>Courses</h2>
-      <h3>Add Course</h3>
+      <h2>Games</h2>
+      <h3>Add Game</h3>
       <input 
         type='text' 
         onChange={(e) => handleChange(e)}
-        value={course.title}
+        value={game.name}
       />
-      <input type='submit' value='Save' />
+      <input type='submit' value='Add' />
     </form>
   )
 }
 
-export default CoursesPage
+export default GamePage

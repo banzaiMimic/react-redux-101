@@ -1,10 +1,10 @@
 import React from 'react'
 import './App.css'
-import CoursesPage from './components/CoursesPage'
+import GamePage from './components/GamePage'
 
 function App() {
   return (
-    <CoursesPage />
+    <GamePage />
   )
 }
 
